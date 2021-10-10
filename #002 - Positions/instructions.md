@@ -1,43 +1,19 @@
-#Buttons
-<p>Button is a widget too. Lets create a button:</p>
+<h1>Positions</h1>
+<p>Lets use the grid system (rows and collunms) </p>
+<p>You can see the image in this directory to understand better and the syntax is this:</p>
 
 ```
-#btn = Button(main widget, text='your text')
-btnClick = Button(root, text='Click me!')
-btnClick.pack()
+#yourWidget.grid(row, column)
+lblHello = Label(root, text='Hello World')
+lblMyName = Label(root, text='My name is Eduardo Araujo')
+lblMessage.grid(row=0, column=0)
+lblMyName.grid(row=1, column=0)
 ```
 
-*Change the size. In this case the atributes padx(axe X) and pady(axe Y) are used:*
-```
-#btn = Button(main widget, text='your text', padx=value, pady=value)
-btnClick = Button(root, text='Click me!', padx=20, pady=20)
-btnClick.pack()
-```
------
+<strong>You may not know this, but Python is also object-oriented. We can simplify this code this way:</strong>
 
-###Setting event on click buttton
-We need create a function that will be actived as soon as the button is clicked
 ```
-def click():
-    #code...
-```
-
-In the button add this code:
-```
-btnClick = Button(root, text='Click me!', command=your function)
-```
-
-Example:
-```
-from tkinter import *
-
-root = Tk()
-
-#button function
-def click():
-    lblText = Label(root, text='Well, you clicked a Button').pack()
-
-btnClick = Button(root, text='Click me!', command=click).pack()
-
-root.mainloop()
+#yourWidget.grid(row, column)
+lblHello = Label(root, text='Hello World').grid(row=0, column=0)
+lblMyName = Label(root, text='My name is Eduardo Araujo').grid(row=1, column=0)
 ```
