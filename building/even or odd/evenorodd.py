@@ -7,7 +7,7 @@ root = Tk()
 def click():
     number = e.get()
     text_result = ''
-    if number.alpha():
+    if number.isalpha():
         text_result = 'type ONLY NUMBERS!'
     else:
         number = int(number)
