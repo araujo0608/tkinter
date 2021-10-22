@@ -12,13 +12,13 @@ def clear():
     e.delete(0, END)
 
 def addNumber(number):
-    number = float(number)
+    number = int(number)
     e.insert(END, number)
 
 def sumNumbers():
     global ope
     ope = 'sum'
-    memory.append(float(e.get()))
+    memory.append(int(e.get()))
     clear()
 
 
@@ -26,13 +26,13 @@ def subNumbers():
     global ope
     ope = 'sub'
     global acumulator
-    memory.append(float(e.get()))
+    memory.append(int(e.get()))
     clear()
 
 def multNumbers():
     global ope
     ope = 'mult'
-    memory.append(float(e.get()))
+    memory.append(int(e.get()))
     clear()
 
 def divNumbers():
@@ -48,16 +48,16 @@ def showResult():
 
     #print(ope)
     if ope == 'sum':
-        e.insert(0, sum(memory))
+        e.insert(0, int(sum(memory)))
         memory.clear()
     elif ope == 'sub':
         acumulator = memory[0]
         for index in range(1, len(memory)):
             acumulator = acumulator - memory[index]
-        e.insert(0, acumulator)
+        e.insert(0, int(acumulator))
         memory.clear()
     elif ope == 'mult':
-        e.insert(0, prod(memory))
+        e.insert(0, int(prod(memory)))
         memory.clear()
     elif ope == 'div':
         acumulator = memory[0]
