@@ -1,2 +1,2 @@
 # tkinter
- learning tkinter in codemy.com
+ learning tkinter in codemy.com (youtube)
