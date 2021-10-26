@@ -1,4 +1,4 @@
-#Icons
+<h1>Icons</h1>
 <p> To download a icon visit iconarchive.com, choose an icon and download as .ico file</p>
 <p>Sintax: [mainwindow].iconbitmap('directory of your .ico file')</p>
 <p>Ex: root.iconbitmap('project/icons/myicon.ico')</p>
@@ -11,7 +11,7 @@ root.iconbitmap('project/icons/myicon.ico')
 root = mainloop()
 ```
 
-#Images
+<h1>Images</h1>
 <p>To use real images like JPEGs or PNG we have to import modules (Pillow) and do little things to make it happen</p>
 <p>First we need install the package Pillow on terminal (if you use PyCharm is just add click in some buttons) with the command: pip install pillow</p>
 
