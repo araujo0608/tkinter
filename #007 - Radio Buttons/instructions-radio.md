@@ -28,6 +28,32 @@ Get value is so easy. Just use .get() function in that variable:
 lblRadioSelection = Label(root, text=myvar.get()).pack()
 ~~~
 
+The final program:
+~~~python
+from tkinter import  *
+
+
+root = Tk()
+root.title('Radio Buttons')
+
+
+def showRadio():
+	lblRadioSelection = Label(root, text=radio_var.get()).pack()
+
+lblTitle = Label(root, text='CHOOSE AN OPTION BELOW', font='bold')
+lblTitle.config(font=40)
+lblTitle.pack()
+
+radio_var = IntVar()
+
+Radiobutton(root, text='Option1', command=showRadio, variable=radio_var, value=1).pack()
+Radiobutton(root, text='Option2', command=showRadio, variable=radio_var, value=2).pack()
+Radiobutton(root, text='Option3', command=showRadio, variable=radio_var, value=3).pack()
+	
+
+root.mainloop()
+~~~
+
 ## Using loop to make a lot of Radios ##
 
 it is important for you to know that it is possible to *make many radios through a loop*. This can be more **practical** and **faster**.
