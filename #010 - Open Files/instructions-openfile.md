@@ -27,3 +27,5 @@ root.filename = filedialog.askopenfilename(initialdir="home/eduardo/imagens", ti
 
 root.mainloop()
 ~~~
+
+The content of variable root.filename is the directory of the file.
