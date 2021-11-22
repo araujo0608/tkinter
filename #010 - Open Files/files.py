@@ -3,6 +3,8 @@ from tkinter import filedialog
 
 root = Tk()
 root.title("Open Files")
+root.geometry("350x350")#width x height
+root.resizable(False, False)# height, width
 
 
 def openfile():
