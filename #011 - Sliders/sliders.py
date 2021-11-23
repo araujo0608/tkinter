@@ -24,4 +24,4 @@ btnShowVerticalSlider.pack()
 btnShowHorizontalSlider = Button(root, text='Show horizontal value', command=showHorizontal)
 btnShowHorizontalSlider.pack()
 
-root.mainloop()
+root.mainloop() #keep main window
