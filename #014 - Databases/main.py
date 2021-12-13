@@ -16,7 +16,7 @@ conn = sqlite3.connect('address_book.db')
 c = conn.cursor()
 
 '''
-c.execute("""CREATE TABLE address(
+c.execute("""CREATE TABLE addresses(
             first_name text,
             last_name text,
             address text,
@@ -61,13 +61,31 @@ entryZipcode.grid(row=5, column=1, columnspan=2)
 
 # Buttons in Grid
 
-btnInsert = Button(root, text='Add to database')
+btnInsert = Button(root, text='Add to database', command=lambda:insertInto(
+    entryFirstname.get(), 
+    entryLastname.get(), 
+    entryAddress.get(), 
+    entryCity.get(),
+    entryState.get(),
+    entryZipcode.get()
+    )
+)
+
+
 btnShow = Button(root, text='Show database')
+
 
 btnClear = Button(
     root, 
     text='Clear all fields', 
-    command=lambda:clear(entryFirstname, entryLastname, entryAddress, entryCity, entryState, entryZipcode)
+    command=lambda:clear(
+        entryFirstname, 
+        entryLastname, 
+        entryAddress, 
+        entryCity, 
+        entryState, 
+        entryZipcode
+        )
     )
 
 btnClear.grid(row=0, column=3)
