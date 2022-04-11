@@ -1,16 +1,17 @@
 # Input Fields
 
-<p>To add a input field in Tkinter, we need use the Entry() Widget</p>
+<p>To add an input field in Tkinter, we need use the Entry() Widget</p>
 
 Syntax, its pretty easy:
-```
+
+```python
 e = Entry(your main window, parametrers...)
 e.pack()
 ```
 
 Look the example below:
 
-```
+```python
 from tkinter import *
 root = Tk()
 
@@ -32,7 +33,7 @@ root.mainloop()
 
 <p>Observer in the label on def click(), we called the e.get()</p>
 
-```
+```python
 from tkinter import *
 
 root = Tk()
