@@ -1,4 +1,4 @@
-#Input Fields
+# Input Fields
 
 <p>To add a input field in Tkinter, we need use the Entry() Widget</p>
 
@@ -20,14 +20,14 @@ e.pack()
 root.mainloop()
 ```
 
-###Parametrers
+### Parametrers
 * width -> width = 50
 * bg -> bg = blue
 * fg (font color) -> fg = white
 * borderwidth -> borderwidth = 5
 * and much more...
 
-###Get the value
+### Get the value
 <p>For this we can use the get() function</p>
 
 <p>Observer in the label on def click(), we called the e.get()</p>
